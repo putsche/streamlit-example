@@ -12,6 +12,6 @@ def login_screen():
 if not st.user.is_logged_in:
     login_screen()
 else:
-    st.user
-    st.header(f"Welcome, {st.user.name}!")
+    st.write(f"Welcome, {st.user.name}!")
+    st.caption(st.user)
 
