@@ -5,8 +5,8 @@ import pandas as pd
 import streamlit as st
 
 def login_screen():
-    st.header("This app is private.")
-    st.subheader("Please log in.")
+    st.subheader("This app is private.")
+    st.write("Please log in to proceed ...")
     st.button("Log in with Microsoft", on_click=st.login)
 
 if not st.user.is_logged_in:
